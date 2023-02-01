@@ -52,12 +52,11 @@ jobs:
 
       - name: Run Validation on Deploy Source
 
-        run: sfdx force:source:deploy -c -x manifest/package.xml -u eabraham@gmail.com
-  
+        run: sfdx force:source:deploy -c -x manifest/package.xml -u ronnieneworg@gmail.com
     
 
     # Deploy
 
       - name : Deploy to SF Org            
 
-        run: sfdx force:source:deploy -x manifest/package.xml -u eabraham@gmail.com
+        run: sfdx force:source:deploy -x manifest/package.xml -u ronnieneworg@gmail.com
