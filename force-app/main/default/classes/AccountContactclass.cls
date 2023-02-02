@@ -17,7 +17,7 @@ public class AccountContactclass {
             AccountId=acctID);
         insert mario;
         return aclist;
-        ---------------------------------------
+       // Once the account is inserted, the sObject will be // Once the account is inserted, the sObject will be // Once the account is inserted, the sObject will be 
          
          
     }
