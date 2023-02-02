@@ -24,6 +24,7 @@ trigger AcccountUpdate on Opportunity (after insert,after update) {
                 obj.Is_Gold__c=False;
                 lstAccounts.add(obj);
             }
+            //--------------------------------------------------------------------------------------------------------------------------------
         }
         if(lstAccounts.size()>0){
             upsert lstAccounts;
