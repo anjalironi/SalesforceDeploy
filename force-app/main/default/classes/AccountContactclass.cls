@@ -19,6 +19,9 @@ public class AccountContactclass {
         return aclist;
        // Once the account is inserted, the sObject will be // Once the account is inserted, the sObject will be // Once the account is inserted, the sObject will be 
         // Once the account is inserted, the sObject will be // Once the account is inserted, the sObject will be // Once the account is inserted, the sObject will be 
+         // Once the account is inserted, the sObject will be // Once the account is inserted, the sObject will be // Once the account is inserted, the sObject will be 
+        // Once the account is inserted, the sObject will be // Once the account is inserted, the sObject will be // Once the account is inserted, the sObject wil // Once the account is inserted, the sObject will be // Once the account is inserted, the sObject will be // Once the account is inserted, the sObject will be 
+        // Once the account is inserted, the sObject will be // Once the account is inserted, the sObject will be // Once the account is inserted, the sObject wil
          
          
     }
