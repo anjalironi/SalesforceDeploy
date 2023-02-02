@@ -7,7 +7,7 @@ trigger AcccountUpdate on Opportunity (after insert,after update) {
     //to store related acc id and opp
     Map<Id,Opportunity> mapAccIdOpp=new Map<Id,Opportunity>();
     
-    if(Trigger.isInsert || Trigger.isUpdate && Trigger.isAfter){
+    if(Trigger.isUpdate && Trigger.isAfter){
         for(Opportunity obj : Trigger.new){
             setAccountIds.add(obj.AccountId);
         }
