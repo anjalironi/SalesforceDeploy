@@ -7,6 +7,8 @@ on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "dev" ]
+   pull_request:
+    branches: [ "dev" ]
  
 
   # Allows you to run this workflow manually from the Actions 
@@ -50,5 +52,6 @@ jobs:
    
 
     # Deploy
-      - name : Deploy to SF Org            
+      - name : Deploy to SF Org       
+        if: ${{github.event_name == 'push'}}
         run: sfdx force:source:deploy -x manifest/package.xml -u ronnieneworg@gmail.com
