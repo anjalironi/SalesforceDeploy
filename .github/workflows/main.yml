@@ -38,8 +38,12 @@ jobs:
         
      # Connecting to SF Org
       - name: Integrating Salesforce 
-        run : sfdx force:auth:jwt:grant --clientid 3MVG9pRzvMkjMb6mQmwyTIqGh0POKHjFRtQ1jdeZ5mIkb7tIZghEBH45Ya3G1C2GR.qlVEmVfwY9xkzdAPa1j --jwtkeyfile ./buildfile/server.key --username ronnieneworg@gmail.com --instanceurl https://login.salesforce.com
-      
+        env:
+         CLIENT_ID: ${{ secrets.CLIENT_ID }}
+         USERNAME: ${{ secrets.SALESFORCE_USERNAME }}
+         INSTANCE_URL: ${{ secrets.INSTANCE_URL }}
+        run: sfdx force:auth:jwt:grant --clientid $CLIENT_ID --jwtkeyfile ./buildfiles/server.key --username $SALESFORCE_USERNAME --instanceurl $INSTANCE_URL
+        
           
       # Convert to Deploy Source
       - name: Convert to Deploy Source
